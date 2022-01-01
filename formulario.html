@@ -1,0 +1,108 @@
+<h2>Forms</h2>
+<p>
+  Formulários são importantes quando precisamos que o usuario forneça
+  informações. Formulários são basicamente formados pela Tag <mark>input</mark>.
+  Seguidas dos atributos <mark>type</mark>,
+  <mark>placeholder</mark>,<mark>required</mark>,<mark>name</mark>.
+</p>
+<h3>type</h3>
+<p>
+  Basicamente informa que tipo de dado será inserido no campo. Pode ser do tipo
+  Texto, E-mail.
+</p>
+
+<h3>placeholder</h3>
+<p>
+  É o texto que fica dentro da caixa, informando ao usuario o que deve ser
+  digitado naquele campo.
+</p>
+
+<h3>required</h3>
+<p>
+  É o atributo que faz com que determinado input seja obrigatório para o envio
+  das informações do Formulário.
+</p>
+
+<h3>Button</h3>
+<p>
+  É a Tag para inserir o botão do nosso formulário. Também possui os atributos
+  <mark>type</mark>, onde geralmente configuramos como <mark>submit</mark>. O
+  que significa que iremos submeter os dados ali informados
+</p>
+
+<h3>textarea</h3>
+<p>
+  É a Tag onde iremos criar uma caixa de texto mais extensa. Onde poderemos
+  informar a quantidade de linhas com o atributo <mark>rows</mark>, nele
+  colocamos a quantidade de linhas que queremos nessa caixa de texto.
+</p>
+
+<hr />
+
+<h2>Login</h2>
+
+<form>
+  <input type="email" placeholder="Digite seu e-mail" />
+  <br />
+  <br />
+  <input type="password" placeholder="Senha" />
+  <br />
+  <br />
+  <button type="submit">Entrar</button>
+</form>
+
+<br />
+<br />
+<hr />
+
+<h2>Formulário de Contato Simples</h2>
+<form>
+  <input type="text" placeholder="Nome" required /><br /><br />
+  <input type="text" placeholder="Gênero" /><br /><br />
+  <input type="text" placeholder="Assunto" required /><br /><br />
+  <textarea placeholder="Mensagem" rows="7" required></textarea><br />
+  <button type="submit">Enviar</button>
+</form>
+
+<hr />
+<h3>Atributo "type" radios</h3>
+<p>
+  Ao configurar o atributo <mark>type</mark> como <mark>radios</mark> colocamos
+  um seletor em forma de circulo. E para que possamos selecionar apenas um, pois
+  por padrão vem para selecionar vários, devemos settar com o atributo
+  <mark>name</mark> com a mesma classificação, que pode ser qualquer nome que
+  você desejar, colocando com o mesmo o <mark>name</mark> você informa o
+  navegador que todas a opções são do mesma classificação. Nesse exemplo abaixo
+  temos <mark>name</mark> configurado como "genero", assim podemos selecionar
+  apenas um.
+</p>
+<h3>Tag "select" e "option"</h3>
+<p>
+  Com essas Tags podemos criar opções do tipo lista oculta, quando clicarmos ela
+  mostrará a lista de opções disponiveis. Nesse exemplo abaixo temos o assunto
+  do formulario de contato como lista oculta.
+</p>
+
+<h3>Input do tipo "file"</h3>
+<p>
+  Esse atributo permite que carreguemos arquivos para o nosso formulario, pode
+  ser imagens, documentos etc.
+</p>
+
+<hr />
+<hr />
+
+<h2>Formulário de Contato Complexo</h2>
+<form>
+  <input type="text" placeholder="Nome" required /><br /><br />
+  <input type="radio" name="genero" />Masculino<br /><br />
+  <input type="radio" name="genero" />Feminino<br /><br />
+  <select>
+    <option>Sugestão</option>
+    <option>Reclamação</option>
+    <option>Suporte</option></select
+  ><br /><br />
+  <textarea placeholder="Mensagem" rows="7" required></textarea><br /><br />
+  <input type="file" /><br /><br />
+  <button type="submit">Enviar</button>
+</form>
